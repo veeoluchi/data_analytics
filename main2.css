@@ -1,189 +1,54 @@
 /* =================================
-   MAIN PAGE ONLY (Scoped)
+   SOCIAL ICONS — STRUCTURE + STYLE
+   SAFE / DO NOT REMOVE
 ================================= */
 
-body#home {
-    background: #f6f5f3;
-    color: #2b2430;
-    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.6;
+body#home .socicons-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 0;
+    margin: 35px 0 10px;
 }
 
-/* ===============================
-   NAVBAR
-================================ */
-body#home .navbar {
-    background: #2a193d !important;
-    box-shadow: 0 4px 20px rgba(42, 25, 61, 0.25);
+body#home .socicons-list li {
+    margin: 0;
+    padding: 0;
 }
 
-body#home .navbar-brand,
-body#home .navbar-nav .nav-link {
-    color: #f6f5f3 !important;
-    font-weight: 500;
-}
-
-body#home .navbar-nav .nav-link:hover {
-    color: #e6c97a !important;
-}
-
-/* ===============================
-   HERO / JUMBOTRON
-================================ */
-body#home .hero {
-    background: #f6f5f3;
-    border-radius: 26px;
-    margin-top: 90px;
-    padding: 80px 25px;
-    box-shadow: 0 28px 60px rgba(43, 36, 48, 0.18);
-}
-
-body#home .hero h1 {
-    color: #2b2430;
-    font-weight: 700;
-}
-
-body#home .hero .lead {
-    color: #4a3f55;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-/* Highlight name */
-body#home .highlight {
-    color: #c9a24d;
-}
-
-/* ===============================
-   BUTTONS
-================================ */
-
-body#home .btn {
-    border-radius: 18px;
-    padding: 12px 26px;
-    font-weight: 600;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease;
-}
-
-body#home .custom-btn {
-    background: #c9a24d;
-    border: 2px solid #c9a24d;
-    color: #2a193d;
-    border-radius: 999px;
-    padding: 14px 34px;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-}
-
-body#home .custom-btn:hover {
-    background: #b8923f;
-    border-color: #b8923f;
-    color: #2a193d;
-    transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(201, 162, 77, 0.4);
-}
-
-body#home .custom-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(201, 162, 77, 0.35);
-}
-
-/* ===============================
-   SECTIONS
-================================ */
-body#home h2 {
-    font-weight: 700;
-    color: #2b2430;
-}
-
-body#home .intro {
-    color: #4a3f55;
-}
-
-/* ===============================
-   PORTFOLIO CARDS
-================================ */
-body#home .project-row {
-    margin-top: 45px;
-    row-gap: 30px;
-}
-
-body#home .fancy-card {
-    background: #ffffff;
-    border-radius: 26px;
-    border: 1px solid rgba(43, 36, 48, 0.15);
-    box-shadow: 0 16px 40px rgba(43, 36, 48, 0.14);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-body#home .fancy-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 32px 70px rgba(43, 36, 48, 0.28);
-}
-
-body#home .fancy-card .card-title {
-    font-weight: 600;
-    color: #2a193d;
-}
-
-body#home .fancy-card .card-text {
-    color: #4a3f55;
-}
-
-/* ===============================
-   CONTACT FORM
-================================ */
-body#home .form-div {
-    background: #ffffff;
-    border-radius: 26px;
-    border: 1px solid rgba(43, 36, 48, 0.15);
-    box-shadow: 0 28px 65px rgba(43, 36, 48, 0.22);
-    padding: 30px;
-}
-
-body#home .form-control {
-    border-radius: 14px;
-    border: 1px solid rgba(43, 36, 48, 0.25);
-}
-
-body#home .form-control:focus {
-    border-color: #c9a24d;
-    box-shadow: 0 0 0 0.2rem rgba(201, 162, 77, 0.25);
-}
-
-/* Validation */
-body#home .was-validated .form-control:invalid,
-body#home .form-control.is-invalid {
-    border-color: #dc2626;
-    box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.18);
-}
-
-body#home .was-validated .form-control:valid,
-body#home .form-control.is-valid {
-    border-color: #16a34a;
-    box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.16);
-}
-
-/* ===============================
-   SOCIAL ICONS
-================================ */
 body#home .socicons-list li a {
-    background: #2a193d;
-    color: #f6f5f3;
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    background-color: #2a193d;   /* base background */
+    color: #f6f5f3;              /* icon color */
     font-size: 24px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease;
 }
 
+/* Hover interaction */
 body#home .socicons-list li a:hover {
-    background: #c9a24d;
+    transform: translateY(-3px);
+    background-color: #c9a24d;
+    color: #2a193d;
     box-shadow: 0 14px 28px rgba(43, 36, 48, 0.25);
 }
 
-/* ===============================
-   COPYRIGHT
-================================ */
-body#home .copyright {
-    color: rgba(43, 36, 48, 0.7);
-    margin-top: 28px;
-    font-size: 0.95rem;
+/* Keyboard accessibility */
+body#home .socicons-list li a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 162, 77, 0.5);
 }
